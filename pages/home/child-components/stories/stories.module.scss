@@ -1,0 +1,22 @@
+@use '../../../../styles/modules/colors' as color;
+
+.container {
+  display: flex;
+  width: 100%;
+  padding: 8px 6px;
+}
+.myStatus {
+  display: grid;
+  grid-template-columns: 40px 1fr;
+  grid-gap: 8px;
+  align-items: center;
+}
+.title {
+  font-size: 20px;
+  font-weight: 500;
+  color: color.$blackPrimary;
+}
+.text{
+  font-size: 14px;
+  color: rgb(117, 117, 117);
+}

@@ -1,0 +1,32 @@
+@use '../../styles/modules/colors' as color;
+
+.container {
+  display: none;
+}
+@media only screen and (max-width: 600px) {
+  .container {
+    display: flex;
+    padding: 0;
+    width: 100%;
+    margin: 0 auto;
+  }
+  .content {
+    justify-content: space-between;
+    display: flex;
+    gap: 12px;
+    width: 100%;
+    margin: 0 auto;
+  }
+  
+}
+.text {
+  color: white;
+  font-weight: 500;
+  cursor: pointer;
+  text-align: center;
+  font-size: 15px;
+}
+.divText {
+  width: 100%;
+  display: grid;
+}

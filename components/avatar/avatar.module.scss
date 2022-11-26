@@ -1,0 +1,14 @@
+@use '../../styles/modules/colors' as color;
+
+.container{
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  font-size: 12px;
+  border: 1px solid rgb(226, 226, 226);
+  display: grid;
+  justify-content: center;
+  color: color.$greenPrimary;
+  font-weight: 600;
+  align-items: center;
+}

@@ -1,0 +1,45 @@
+@use '../../styles/modules/colors' as color;
+
+.container {
+  width: 100%;
+  display: flex;
+  background-color: color.$greenPrimary;
+  justify-content: center;
+  padding: 12px 0;
+}
+
+.content {
+  max-width: 1200px;
+  width: 100%;
+  display: grid;
+  grid-gap: 8px;
+}
+
+.logo {
+  color: white;
+  font-size: 20px;
+  font-weight: 800;
+}
+.action {
+  display: none;
+}
+
+@media only screen and (max-width: 500px) {
+  .container {
+    padding: 9px 8px;
+  }
+  .content {
+    max-width: auto;
+    grid-gap: 16px;
+    width: 100%;
+  }
+  .action {
+    display: flex;
+    gap: 12px;
+  }
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+  }
+
+}

@@ -1,0 +1,43 @@
+.container {
+  width: 100%;
+  justify-content: center;
+  display: flex;
+  
+}
+
+.content {
+  max-width: 1240px;
+  width: 100%;
+  display: grid;
+  grid-gap: 12px;
+  grid-template-columns: 430px 1fr 300px;
+}
+.row {
+  display: grid;
+  grid-gap: 8px;
+  grid-template-columns: 1fr;
+}
+
+.divMessage {
+  display: grid;
+  grid-gap: 8px;
+}
+
+@media only screen and (max-width: 600px) {
+  .container {
+    padding: 6px 8px;
+  }
+  .content {
+    max-width: auto;
+    width: 100%;
+    display: grid;
+    grid-gap: 12px;
+    grid-template-columns: 1fr;
+  }
+  .detailmessage {
+    display: none;
+  }
+  .profile{
+    display: none;
+  }
+}
